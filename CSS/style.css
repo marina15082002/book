@@ -26,7 +26,7 @@
     }
 
     td {
-        min-width: 25px!important;
+        min-width: 60px!important;
     }
 
     .vr {
@@ -38,6 +38,41 @@
         height: 6px!important;
         border-radius: 10px;
         margin-top: 70px;
+    }
+
+    #skills .col-sm-2 {
+        width: 25%;
+    }
+
+    #skills .col-sm-2 {
+        width: 33%!important;
+    }
+
+    #summary {
+        width: 70%!important;
+        display: none;
+        z-index: 1;
+    }
+
+
+    .contents {
+        margin-left: 0;
+    }
+
+    #burgerMenu {
+        display: flex;
+    }
+
+    h2 {
+        font-size: 25.5px;
+    }
+
+    h1 {
+        font-size: 31.5px;
+    }
+
+    .titleInfo {
+        margin-left: 50px;
     }
 }
 
@@ -54,6 +89,69 @@
     #hr {
         display: none;
     }
+}
+
+#experiences {
+    margin: 0!important;
+}
+
+#projectsDiv {
+    padding-top: 70px;
+}
+
+#hobbies {
+    padding-top: 70px;
+}
+
+.hobbie img {
+    width: 50%!important;
+    margin-bottom: 20px;
+}
+
+.hobbie {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: #0b4261;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 70px;
+}
+
+footer {
+    background-color: #0b4261;
+    margin-top: 70px;
+    padding: 20px 0 20px 0;
+}
+
+footer p, footer a {
+    color: white!important;
+}
+
+footer svg {
+    width: 20px;
+    margin-right: 20px;
+}
+
+footer .bi {
+    fill: white!important;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav {
+    padding: 10px 20px 10px 20px!important;
+}
+
+header ul li {
+    padding: 5px 15px 5px 15px;
 }
 
 h1 {
@@ -88,7 +186,7 @@ h1 {
 }
 
 h3 {
-    color: white;
+    color: white!important;
     text-align: center;
     padding-right: 10%;
 }
@@ -112,8 +210,8 @@ h5 {
     font-weight: bold;
 }
 
-#experiences {
-    margin-top: 20px;
+#exp {
+    padding-top: 70px;
 }
 
 #sereneo img {
@@ -136,6 +234,10 @@ td {
     margin: 0px 20px 0px 20px;
 }
 
+#skillsDiv {
+    padding-top: 70px;
+}
+
 #skills label {
     text-align: center;
     font-size: 20px;
@@ -152,6 +254,15 @@ td {
 
 #skills .col-sm-2 {
     width: 19.66666667%;
+}
+
+#skills .col-sm-3 {
+    width: 225px;
+}
+
+.projects {
+    width: 100%;
+    padding-left: 25px;
 }
 
 #table {
@@ -187,5 +298,144 @@ td {
     font-size: xx-large;
     background-size: 150%;
 }
+
+#summary {
+    background-color: #0b4261;
+    padding: 20px;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+}
+
+#summary button {
+    text-decoration: none;
+    border: none;
+    background-color: #0b4261;
+    color: white;
+    text-align: start;
+}
+
+#summary button:hover{
+    font-weight: bold;
+}
+
+.contents img {
+    width: 100%;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    align-items: end;
+}
+
+.subtitle img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+h2 {
+    color: #395061;
+}
+
+#cross {
+    text-align: end!important;
+}
+
+.animationSummary {
+    animation-duration: 3s;
+    animation-name: slideoutSummary;
+}
+
+.animationContents {
+    display: flex!important;
+    position: relative;
+    animation-duration: 3.5s;
+    animation-name: slideoutContents;
+}
+
+.animationInSummary {
+    animation-duration: 3s;
+    animation-name: slideinSummary;
+}
+
+.animationInContents {
+    display: flex!important;
+    position: relative;
+    animation-duration: 3.5s;
+    animation-name: slideinContents;
+}
+
+.displayNone {
+    display: none!important;
+}
+
+.marginLeft {
+    margin-left: 0!important;
+}
+
+.contents {
+    margin-left: 25%;
+    width: 100%;
+}
+
+#burgerMenu {
+    display: none;
+    background-color: #0b4261;
+    border: none;
+    width: fit-content;
+    color: white;
+    padding: 20px;
+    position: fixed;
+}
+
+#summary h5 {
+    color: #afb9d2 !important;
+}
+
+li {
+    color: white;
+}
+
+@keyframes slideoutSummary {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: -360px;
+  }
+}
+
+@keyframes slideinSummary {
+  0% {
+    left: -360px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes slideoutContents {
+  0% {
+      margin-left: 25%;
+  }
+
+  100% {
+      margin-left: 0;
+  }
+}
+
+@keyframes slideinContents {
+  0% {
+      margin-left: 0;
+  }
+
+  100% {
+      margin-left: 25%;
+  }
+}
+
+
 
 

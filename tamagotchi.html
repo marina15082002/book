@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Tamagotchi</title>
+</head>
+<body>
+
+
+<div class="d-flex">
+  <div class="d-flex flex-column" id="summary">
+    <button id="cross" onclick="closeSummary('content0')">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x"
+           viewBox="0 0 16 16">
+        <path
+          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </button>
+    <button onclick="changePage('content0')">> Qu'est-ce que c'est ?</button>
+    <button onclick="changePage('content1')">> Programmation</button>
+    <button onclick="changePage('content2')">> Autres projets similaires</button>
+    <hr>
+    <h5>Compétences</h5>
+    <ul>
+      <li>Langage C</li>
+    </ul>
+    <hr>
+    <h5>Outils utilisés</h5>
+    <ul>
+      <li>CURL</li>
+      <li>GTK</li>
+      <li>Git / GitHub</li>
+      <li>Clion</li>
+      <li>Linux / Ubuntu</li>
+    </ul>
+  </div>
+
+  <button id="burgerMenu" onclick="openSummary('content0')">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
+         viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+  </button>
+
+  <div class="contents" id="content0">
+    <div class="container">
+      <h1 class="d-flex justify-content-center titleInfo">Tamagotchi</h1>
+      <div class="d-flex subtitle">
+        <img src="Photos/projects/tamago.png">
+        <h2>Qu'est-ce que c'est ?</h2>
+      </div>
+      <p>Le projet du tamagotchi est un jeu en C qui a été réalisé lors de ma deuxième année à l'ESGI.<br>
+        L'objectif du jeu ? Prendre soin de sa créature en la nourrissant et la soignant. Pour cela, il est possible de
+        gagner des pièces au travers de mini jeu afin de pouvoir acheter le nécessaire et même quelques tenues.<br>
+        Pour réaliser ce programme j'avais toutefois quelques contraintes, comme l'utilisation d'<b>une bibliothèque
+          graphique</b>, l'utilisation d'une <b>CURL</b> et démontrer ma maîtrise des <b>pointeurs</b> et des <b>structures</b>
+        en C.
+      </p>
+
+      <div style="align-items: center; text-align: center">
+        <img src="Photos/projects/tamagotchi4.png" style="width: auto; align-items: center; text-align: center">
+      </div>
+    </div>
+  </div>
+
+  <div class="contents" id="content1">
+    <div class="container">
+      <h1 class="d-flex justify-content-center titleInfo">Tamagotchi</h1>
+      <div class="d-flex subtitle">
+        <img src="Photos/projects/tamago.png">
+        <h2>Programmation</h2>
+      </div>
+      <p>
+        Ce jeu a été réalisé en langage C. Le but premier était de montrer sa maîtrise du langage, mais notament des
+        pointeurs et des structures.
+      </p>
+      <br>
+      <h5>Organisation</h5>
+      <p>
+        Afin d'organiser au mieux le projet et de le rendre plus facile d'utilisation travaillant sur linux, j'ai décidé
+        de créer un MakeFile afin de permettre une compilation rapide. <br>
+        J'ai réalisé un fichier .sh afin de pouvoir en partie y mettre les prototypes de fonctions les plus importants.
+        <br>
+        J'ai organisé mon code dans différents fichiers en fonction des features.
+      </p>
+      <br>
+      <h5>CURL - API : OpenWeather</h5>
+      <p>
+        Afin de mettre en place l'utilisation d'une CURL dans mon jeu, j'ai réalisé un décors qui se met à jour en
+        fonction de la météo qu'il fait lorsqu'une personne lance le jeu.<br>
+        Pour cela, je fais appel à l'API "OpenWheather", qui permet de récolter en temps réel différentes données
+        météorologiques pour n'importe quel endroit sur Terre.<br>
+        Les données récoltées sont retranscrites au format json. Il m'a donc fallut parcourir ce fichier en C afin
+        d'accéder aux informations qui m'étaient nécessaires pour afficher la bonne météo.
+      </p>
+      <br>
+      <h5>Bibliothèque graphique : GTK</h5>
+      <p>L'une de mes contraintes pour ce projet étaient de réaliser une application avec une interface graphique.<br>
+        Pour cela j'ai découvert une bibliothèque graphique qui est utilisé en C qui se nomme "GTK". Cette bibliothèque
+        est utilisée pour créer des applications et/ou des jeux sur Linux.<br>
+        Pour créer les interfaces j'ai utilisé l'application "Glade" qui permet de modéliser des interfaces utilisables
+        par la bibliothèque GTK.</p>
+      <br>
+      <h5>Fichier de configuration</h5>
+      <p>
+        Afin de rendre le jeu plus modulable, j'ai créé un fichier de configuration dans lequel les utilisateurs peuvent
+        modifier certains paramètres comme le lieu où est prise la météo, les niveaux de barres de faim, d'hygiène et de
+        soin, le niveau de difficulté pour le mini jeux ...
+      </p>
+    </div>
+  </div>
+
+  <div class="contents" id="content2">
+    <div class="container">
+      <h1 class="d-flex justify-content-center titleInfo">Tamagotchi</h1>
+      <div class="d-flex subtitle">
+        <img src="Photos/projects/tamago.png">
+        <h2>Autres projets similaires</h2>
+      </div>
+      <h5>Bomberman</h5>
+      <p></p>
+      <br>
+      <h5>Puissance C</h5>
+      <p></p>
+      <br>
+      <h5>Scanner de code barre</h5>
+      <p></p>
+    </div>
+  </div>
+</div>
+</body>
+
+<script type="text/javascript">
+  let i = 1;
+  while (document.getElementById("content" + i))
+  {
+    document.getElementById("content" + i).style.display = "none";
+    i++;
+  }
+
+  if (document.getElementById("summary").style.width === "70%")
+  {
+    document.getElementById("summary").onblur = closeSummary("content0");
+  }
+
+  function changePage(contentsVisible)
+  {
+    let i = 0;
+    while (document.getElementById("content" + i))
+    {
+      document.getElementById("content" + i).style.display = "none";
+      i++;
+    }
+
+    document.getElementById(contentsVisible).style.display = "block";
+    document.getElementById("cross").setAttribute("onclick", "closeSummary('" + contentsVisible + "')");
+    document.getElementById("burgerMenu").setAttribute("onclick", "openSummary('" + contentsVisible + "')");
+  }
+
+  function closeSummary(contentsVisible)
+  {
+    document.getElementById("summary").classList.add("animationSummary");
+    document.getElementById(contentsVisible).classList.add("animationContents");
+    setTimeout(function () {
+       let contents = document.getElementsByClassName("contents");
+       let i = 0;
+       while (contents[i])
+       {
+         contents[i].classList.add("marginLeft")
+         i++;
+       }
+
+       document.getElementById("summary").classList.add("displayNone");
+       document.getElementById("burgerMenu").style.display = "flex";
+
+       document.getElementById("summary").classList.remove("animationSummary");
+       document.getElementById(contentsVisible).classList.remove("animationContents");
+     }
+     , 2500);
+  }
+
+  function openSummary(contentsVisible)
+  {
+    document.getElementById("burgerMenu").style.display = "none";
+    document.getElementById("summary").classList.add("animationInSummary");
+    document.getElementById(contentsVisible).classList.add("animationInContents");
+    document.getElementById("summary").classList.remove("displayNone");
+    let contents = document.getElementsByClassName("contents");
+    let i = 0;
+    while (contents[i])
+    {
+      contents[i].classList.remove("marginLeft")
+      i++;
+    }
+
+    setTimeout(function () {
+      document.getElementById("summary").classList.remove("animationInSummary");
+      document.getElementById(contentsVisible).classList.remove("animationInContents");
+    }, 2500);
+  }
+</script>
+</html>

@@ -9,7 +9,7 @@
           rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Jeu de combat</title>
+    <title>No more waste</title>
   </head>
 <body>
 
@@ -23,20 +23,20 @@
       </button>
       <button onclick="changePage('content0')">> Qu'est-ce que c'est ?</button>
       <button onclick="changePage('content1')">> Programmation</button>
-      <button onclick="changePage('content2')">> Autres projets similaires</button>
+      <button onclick="changePage('content2')">> Organisation du projet</button>
+      <button onclick="changePage('content3')">> Autres projets similaires</button>
       <hr>
       <h5>Compétences</h5>
       <ul>
-        <li>Python</li>
-        <li>Programmation orienté objet</li>
-        <li>Dessin</li>
+        <li>Langage C</li>
       </ul>
       <hr>
       <h5>Outils utilisés</h5>
       <ul>
-        <li>Tkinter</li>
-        <li>IDLE</li>
-        <li>Paint</li>
+        <li>GTK</li>
+        <li>Git / GitHub</li>
+        <li>Clion</li>
+        <li>Linux / Ubuntu</li>
       </ul>
     </div>
 
@@ -48,9 +48,9 @@
 
     <div class="contents" id="content0">
       <div class="container">
-        <h1 class="d-flex justify-content-center titleInfo">Jeu de combat</h1>
+        <h1 class="d-flex justify-content-center titleInfo">No more waste</h1>
         <div class="d-flex subtitle">
-          <img src="Photos/projects/epee.png">
+          <img src="Photos/projects/panier3.jpg">
           <h2>Qu'est-ce que c'est ?</h2>
         </div>
         <p>Ce jeu en python a été réalisé dans le cadre de mon baccalauréat spécialité ISN (Informatique et Science du Numérique).<br>
@@ -58,35 +58,21 @@
         L'objectif est simple : Réussir à tuer l'ennemi en premier.
         </p>
 
-        <p>
-          Ce projet ayant été réalisé pour le baccalauréat de 2020, c'est-à-dire lors de l'arrivée du Covid, il n'a pas pu être terminé et présenté lors de la soutenance oral prévu cependant quelques fonctionnalités ont pu voir le jour et ainsi ont permis de rendre le jeu fonctionnel.
-        </p>
-
-        <p>
-          Ici vous allez pouvoir incarné "Cogne Dur" et vous allez devoir éliminé "Va vite".<br>
-          Chaque personnage possède une classe différente et des attributs différents liés à sa classe comme sa vitesse ou son nombre de pv qui peuvent aussi évolué en fonction de leur niveau.
-        </p>
-
-        <p>
-          Pour vaincre votre adversaire vous pouvez effectuer 2 actions : l'attaque ou le soin.<br>
-          Les dégats que vous infligeriez à votre ennemis sont aléatoire et dépende de votre niveau et de votre classe. Vous pouvez cependant avec de la chance effectuer un coup critique !<br>
-          Les soins peuvent être efficace lorsque l'ennemis vous inflige des dégats. Votre adversaire est un personnage non joueur qui effectue des actions aléatoires, il est donc probable qu'il vous attaque.
-        </p>
-
-        <img src="Photos/projects/combat.PNG">
-
+        <div style="align-items: center; text-align: center">
+          <img src="Photos/projects/panier2.jpg" style="width: auto; align-items: center; text-align: center">
+        </div>
       </div>
     </div>
 
     <div class="contents" id="content1">
       <div class="container">
-        <h1 class="d-flex justify-content-center titleInfo">Jeu de combat</h1>
+        <h1 class="d-flex justify-content-center titleInfo">No more waste</h1>
         <div class="d-flex subtitle">
-          <img src="Photos/projects/epee.png">
+          <img src="Photos/projects/panier3.jpg">
           <h2>Programmation</h2>
         </div>
         <p>
-          Ce jeu de combat a été codé en python et utilise la bibliothèque graphique Tkinter.
+          J'ai codé le projet sous la forme d'une architecture MVC (modèle vue controleur
         </p>
         <p>
 
@@ -96,9 +82,9 @@
 
     <div class="contents" id="content2">
       <div class="container">
-        <h1 class="d-flex justify-content-center titleInfo">Jeu de combat</h1>
+        <h1 class="d-flex justify-content-center titleInfo">No more waste</h1>
         <div class="d-flex subtitle">
-          <img src="Photos/projects/epee.png">
+          <img src="Photos/projects/panier3.jpg">
           <h2>Autres projets similaires</h2>
         </div>
         <p>
@@ -171,22 +157,6 @@
       document.getElementById("summary").classList.remove("animationInSummary");
       document.getElementById(contentsVisible).classList.remove("animationInContents");
       }, 2500);
-
-/*
-    setTimeout(function () {
-      let contents = document.getElementsByClassName("contents");
-      let i = 0;
-      while(contents[i]) {
-        contents[i].classList.remove("marginLeft")
-        i++;
-      }
-
-      document.getElementById("summary").classList.remove("displayNone");
-      document.getElementById("summary").classList.remove("animationInSummary");
-     }
-     , 2500);
-     */
-
   }
 </script>
 </html>
