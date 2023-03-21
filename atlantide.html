@@ -23,20 +23,20 @@
       </button>
       <button onclick="changePage('content0')">> Qu'est-ce que c'est ?</button>
       <button onclick="changePage('content1')">> Programmation</button>
-      <button onclick="changePage('content2')">> Organisation du projet</button>
-      <button onclick="changePage('content3')">> Autres projets similaires</button>
+      <button onclick="changePage('content2')">> Autres projets similaires</button>
       <hr>
       <h5>Compétences</h5>
       <ul>
-        <li>Langage C</li>
+        <li>Langage JavaScript</li>
+        <li>ThreeJS</li>
       </ul>
       <hr>
       <h5>Outils utilisés</h5>
       <ul>
-        <li>GTK</li>
         <li>Git / GitHub</li>
-        <li>Clion</li>
+        <li>Serveur NodeJS</li>
         <li>Linux / Ubuntu</li>
+        <li>WebStorm</li>
       </ul>
     </div>
 
@@ -53,13 +53,11 @@
           <img src="Photos/projects/temple.png">
           <h2>Qu'est-ce que c'est ?</h2>
         </div>
-        <p>Ce jeu en python a été réalisé dans le cadre de mon baccalauréat spécialité ISN (Informatique et Science du Numérique).<br>
-          Ce jeu est un jeu de combat en tour par tour.<br>
-        L'objectif est simple : Réussir à tuer l'ennemi en premier.
+        <p>Cette interface ThreeJS met en oeuvre un univers aquatique dans une interface web. L'objectif de ce projet était de démontrer nos capacités à modéliser une <b>interface ThreeJS</b> et à y ajouter des animations.
         </p>
 
         <div style="align-items: center; text-align: center">
-          <img src="Photos/projects/tamagotchi.png" style="width: auto; align-items: center; text-align: center">
+          <img src="Photos/projects/atlantis3.png" style="width: auto; align-items: center; text-align: center">
         </div>
       </div>
     </div>
@@ -71,12 +69,30 @@
           <img src="Photos/projects/temple.png">
           <h2>Programmation</h2>
         </div>
-        <p>
-          Ce jeu de combat a été codé en python et utilise la bibliothèque graphique Tkinter.
-        </p>
-        <p>
-
-        </p>
+        <h5>Le personnage</h5>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>Afin de pouvoir réaliser au mieux la simulation, j'ai ajouté un personnage qui permet au joueur de se déplacer. Lorsque que le joueur avance, il peut apercevoir les bras de son personnage bouger comme si celui-ci nageait.<br/>
+            Pour effectuer cet effet, j'ai donc récupérer en temps réel les déplacements du visiteur afin de pouvoir jongler entre les différentes animations depuis mon JavaScript.
+            </p>
+          </div>
+          <div class="col-sm-6"><img src="Photos/projects/atlantis4.png"></div>
+        </div>
+        <br>
+        <h5>Les évènements de clavier</h5>
+        <div class="row">
+          <div class="col-sm-6"><img src="Photos/projects/atlantis6.png"></div>
+          <div class="col-sm-6">
+            <p>Dans la map de la simulation se cache un coffre. Afin de rendre l'interface plus intéractive, j'ai ajouté un système d'évènement au clavier afin de pouvoir ouvrir et fermer ce coffre. Lorsque celui-ci est ouvert, le visiteur pourra voir sortir un masque qui s'élèvera dans les aires et qui redescendra quand le coffre se referme.</p>
+          </div>
+        </div>
+        <h5>Les collisions</h5>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>Toujours dans une optique de rendre l'interface intéractive, j'ai ajouté un système de collision avec les statues qui permet de donner l'impression au joueur que la statue le regarde quand il est devant. Pour cela j'ai détecté la collision de la souris avec les statues qui me permet ensuite de déclencher un évènement qui fait apparaître des points lumineux aux niveaux des yeux des statues.</p>
+          </div>
+          <div class="col-sm-6"><img src="Photos/projects/atlantis5.png"></div>
+        </div>
       </div>
     </div>
 
@@ -87,12 +103,14 @@
           <img src="Photos/projects/temple.png">
           <h2>Autres projets similaires</h2>
         </div>
+        <h5>Système solaire</h5>
         <p>
-          Comme le mastermind, le pendu --> mettre l'image du pendu
+          Un petit projet a été réalisé avant celui-ci, il s'agit de la mise en place d'une interface représentant le système solaire mis à l'échelle.
         </p>
-        <p>
-
-        </p>
+         <div class="d-flex">
+        <p>Vous pourrez en savoir plus sur ce projet en cliquant sur ce lien : </p>
+        <a href="systeme_solaire.html" target="_blank">Projet de Sytème solaire</a>
+      </div>
       </div>
     </div>
   </div>

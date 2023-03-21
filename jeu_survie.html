@@ -23,7 +23,6 @@
       </button>
       <button onclick="changePage('content0')">> Qu'est-ce que c'est ?</button>
       <button onclick="changePage('content1')">> Programmation</button>
-      <button onclick="changePage('content2')">> Autres projets similaires</button>
       <hr>
       <h5>Compétences</h5>
       <ul>
@@ -51,13 +50,12 @@
           <img src="Photos/projects/foret.png">
           <h2>Qu'est-ce que c'est ?</h2>
         </div>
-        <p>Ce jeu en python a été réalisé dans le cadre de mon baccalauréat spécialité ISN (Informatique et Science du Numérique).<br>
-          Ce jeu est un jeu de combat en tour par tour.<br>
-        L'objectif est simple : Réussir à tuer l'ennemi en premier.
+        <p>Ce jeu C# réalisé sur unity a été conçu pour un projet de partiel lors de ma deuxième année d'étude à l'ESGI.<br>
+          L'objectif du jeu ? Survivre au sein d'une forêt en remplissant sa barre de nourriture, de soif et de froid pendant le temps imparti. Pour cela il est possible de récupérer des objets qui sont dispersé aléatoirement sur la map.<br>
         </p>
 
         <div style="align-items: center; text-align: center">
-          <img src="Photos/projects/tamagotchi4.png" style="width: auto; align-items: center; text-align: center">
+          <img src="Photos/projects/foret1.PNG" style="width: auto; align-items: center; text-align: center">
         </div>
       </div>
     </div>
@@ -70,27 +68,25 @@
           <h2>Programmation</h2>
         </div>
         <p>
-          Ce jeu de combat a été codé en python et utilise la bibliothèque graphique Tkinter.
+          Ce jeu a été réalisé en C#. L'objectif premier était de montrer notre capacité à s'adapter à de nouveaux langages et outils tel que C# et Unity.
         </p>
+        <h5>Réalisation</h5>
+        <p>Afin de réalisé ce projet j'ai dû me documenter afin de comprendre l'utilisation du langage C# mais aussi du logiciel Unity qui étaient deux choses encore inconnu pour moi. Pour cela, je me suis rendu sur divers sites afin de pouvoir comprendre et imaginer ce que je pouvais réaliser.</p>
+        <h5>Inventaire</h5>
+        Le premier élément que j'ai mis en place après la génération de la Map et de la Scène a été la création d'un système d'inventaire. Pour cela j'ai dû créer un interface et des objets C# afin de répertorier le nombre d'objets que le joueur possède. Pour pouvoir récupérer un objet, j'ai mis en place une gestion des collisions afin de détecter quand un objet a été touché par le joueur et ainsi le récupérer automatiquement dans l'inventaire.
+        <img src="Photos/projects/inventaire.PNG"/>
+        <h5>Différentes scènes</h5>
         <p>
-
+        Dans le jeu se trouve différents niveaux avec à chaque fois une complexité supplémentaire. Tout d'abord, le joueur doit gérer sa barre de faim en se nourrissant, puis sa barre de soif et enfin il doit gérer en plus sa barre d'hypothermie. Pour cela le joueur doit récupérer 3 bûches de bois afin de pouvoir réalisé un feu. Plus il attend sans se réchauffer, plus de la glace apparaît sur son écran. Celle-ci disparaît après s'être réchauffé auprès du feu.
         </p>
-      </div>
-    </div>
-
-    <div class="contents" id="content2">
-      <div class="container">
-        <h1 class="d-flex justify-content-center titleInfo">Jeu de survie</h1>
-        <div class="d-flex subtitle">
-          <img src="Photos/projects/foret.png">
-          <h2>Autres projets similaires</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="Photos/projects/foret2.PNG"/>
+          </div>
+          <div class="col-sm-6">
+            <img src="Photos/projects/foret3.PNG"/>
+          </div>
         </div>
-        <p>
-          Comme le mastermind, le pendu --> mettre l'image du pendu
-        </p>
-        <p>
-
-        </p>
       </div>
     </div>
   </div>
